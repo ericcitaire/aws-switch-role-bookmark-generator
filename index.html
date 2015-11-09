@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <form id="switchrole_form" name="switchrole_form" action="#" onsubmit="javascript:gen(this.roleName.value, this.account.value, this.displayName.value, this.color.value);return false;">
+    <div class="switchrole-form-container">
+      <div class="switchrole-section">
+        <div class="switchrole-header">AWS Switch Role Bookmark Generator
+          <div class="description">
+            Create bookmarks to switch roles in AWS console. This is useful when you have a lot of roles to switch to and the recent roles available in the console are not enough.
+            <p>
+              Fill the form, click "Generate", and drag the generated link to your bookmark bar. Use the bookmark in a tab where the AWS console is opened.
+          </div>
+        </div>
+      </div>
+      <fieldset>
+        <div class="switchrole-textinput" id="input_account">
+          <div class="switchrole-textinput-wrapper">
+            <label for="account">Account*</label>
+            <input id="account" name="account" value="" required="">
+          </div>
+        </div>
+        <div class="switchrole-textinput" id="input_roleName">
+          <div class="switchrole-textinput-wrapper">
+            <label for="roleName">Role*</label>
+            <input id="roleName" name="roleName" value="" required="">
+          </div>
+        </div>
+        <div class="switchrole-textinput" id="input_displayName">
+          <div class="switchrole-textinput-wrapper">
+            <label for="displayName">Display Name*</label>
+            <input id="displayName" name="displayName" value="" required="">
+          </div>
+        </div>
+
+        <div class="colorinput" id="input_color">
+          <label for="color">Color</label>
+
+          <div class="color-picker">
+            <input id="color0" type="radio" value="F2B0A9" name="color" checked="">
+            <label for="color0" class="color-box">a</label>
+            <input id="color1" type="radio" value="FBBF93" name="color">
+            <label for="color1" class="color-box">a</label>
+            <input id="color2" type="radio" value="FAD791" name="color">
+            <label for="color2" class="color-box">a</label>
+            <input id="color3" type="radio" value="B7CA9D" name="color">
+            <label for="color3" class="color-box">a</label>
+            <input id="color4" type="radio" value="99BCE3" name="color">
+            <label for="color4" class="color-box">a</label>
+            <input id="none" type="radio" value="" name="color">
+            <label for="none" class="color-box">a</label>
+            <br>
+            <input id="color5" type="radio" value="FF6666" name="color">
+            <label for="color5" class="color-box">a</label>
+            <input id="color6" type="radio" value="FFB266" name="color">
+            <label for="color6" class="color-box">a</label>
+            <input id="color7" type="radio" value="FFFF66" name="color">
+            <label for="color7" class="color-box">a</label>
+            <input id="color8" type="radio" value="B2FF66" name="color">
+            <label for="color8" class="color-box">a</label>
+            <input id="color9" type="radio" value="66FF66" name="color">
+            <label for="color9" class="color-box">a</label>
+            <input id="color10" type="radio" value="66FFB2" name="color">
+            <label for="color10" class="color-box">a</label>
+            <input id="color11" type="radio" value="66FFFF" name="color">
+            <label for="color11" class="color-box">a</label>
+            <input id="color12" type="radio" value="66B2FF" name="color">
+            <label for="color12" class="color-box">a</label>
+            <input id="color13" type="radio" value="6666FF" name="color">
+            <label for="color13" class="color-box">a</label>
+            <input id="color14" type="radio" value="B266FF" name="color">
+            <label for="color14" class="color-box">a</label>
+            <input id="color15" type="radio" value="FF66FF" name="color">
+            <label for="color15" class="color-box">a</label>
+            <input id="color16" type="radio" value="FF66B2" name="color">
+            <label for="color16" class="color-box">a</label>
+            <input id="color17" type="radio" value="C0C0C0" name="color">
+            <label for="color17" class="color-box">a</label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <div class="switchrole-hr"></div>
+    <div class="switchrole-form-container">
+      <div class="switchrole-buttoninput">
+        <label for="required">*Required </label>
+        <input type="submit" id="input_switchrole_button" class="css3button" alt="Switch Role" value="Generate">
+      </div>
+    </div>
+    <br>
+    <div class="switchrole-form-container">
+      <div id="linkContainer" style="width: 600px; text-align: center; font-size: 18pt;"></div>
+    </div>
+    <div class="switchrole-form-container" style="text-align: right; color: #cccccc;">
+      written by Eric Citaire
+    </div>
+  </form>
+
+</body>
+
+</html>
